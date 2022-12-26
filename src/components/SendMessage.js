@@ -84,7 +84,7 @@ const SendMessages = () => {
             <WhatsAppIcon />
           </div>
           <div>Send Message</div>
-          <a href="https://api.whatsapp.com/send?phone=+918143448261">Click to connect</a>
+          <a href="https://api.whatsapp.com/send?phone=+918143448261&text=${encodeURI(message)}&app_absent=0">Click to connect</a>
         </div>
         {numberEmptyError && (
           <div className='errors'>Mobile number cannot be empty!</div>
